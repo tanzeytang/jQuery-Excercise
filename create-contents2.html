@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>create content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $("document").ready(function() {
+        $("#append").click(function() {
+          $("p:first").append(
+            "this content is appended into the first paragraph"
+          );
+        });
+        $("#preppend").click(function() {
+          //   $("p:first").append(
+          //     "this content is appended into the first paragraph"
+          //   );
+          $("p:first").prepend("prepend some texts.");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="#" id="append">Append</a>
+    <a href="#" id="preppend">Preppend</a>
+
+    <div id="container">
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>modify content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $("document").ready(function() {
+        $("#add-class").click(function() {
+          $("p:first").addClass("color");
+        });
+
+        $("#remove-class").click(function() {
+          $("p:first").removeClass("color");
+        });
+
+        $("#toggle-class").click(function() {
+          $("p:first").toggleClass("color");
+        });
+
+        $("#increase-class").click(function() {
+          $("p:first").css("font-size", "+=1px");
+        });
+      });
+    </script>
+    <style>
+      .color {
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" id="add-class">add-class</a>|
+    <a href="#" id="remove-class">remove-class</a>|
+    <a href="#" id="toggle-class">toggle-class</a>|
+    <a href="#" id="increase-class">increase class</a>
+    <div id="container">
+      <p>paragraph 1</p>
+      <p>paragraph 2</p>
+      <p>paragraph 3</p>
+      <p>paragraph 4</p>
+    </div>
+  </body>
+</html>

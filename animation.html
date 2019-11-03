@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorial 6. animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      //$("") jquery selector
+      //show() && hide() method in jquery
+      $("document").ready(function() {
+        $("#grow").click(function() {
+          $("#textbox").animate({ width: "500px" }, 2000);
+        });
+
+        $("#move").click(function() {
+          $("#textbox").animate({ marginLeft: "200px" }, 2000);
+        });
+
+        $("#bigger").click(function() {
+          $("#textbox").animate({ fontSize: "24px" }, 2000);
+        });
+
+        $("#many").click(function() {
+          $("#textbox").animate(
+            { fontSize: "24px", marginLeft: "200px", width: "500px" },
+            2000
+          );
+        });
+      });
+    </script>
+    <style>
+      #textbox {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        position: absolute;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" id="grow">Grow</a>| <a href="#" id="move">Move</a>|
+    <a href="#" id="bigger">Bigger</a>|
+    <a href="#" id="many">Many</a>
+    <div id="textbox">
+      having fulfilled all the requirements and having passed all the prescribed
+      examinations has on the twenty-ninth day of October 2019 been admitted to
+      the degree of Master of Information Technology
+    </div>
+  </body>
+</html>

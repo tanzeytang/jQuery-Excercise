@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorial 5: slides(slideDown|slideToggle|slideUp)</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      //$("") jquery selector
+      //show() && hide() method in jquery
+      $("document").ready(function() {
+        $("#slidesdown").click(function() {
+          $("#text").slideDown("2000", function() {
+            alert("slides toggle done");
+          });
+        });
+
+        $("#slidesup").click(function() {
+          $("#text").slideUp("2000", function() {
+            alert("slides up done");
+          });
+        });
+
+        $("#toggle").click(function() {
+          $("#text").slideToggle("2000", function() {
+            alert("done");
+          });
+        });
+      });
+    </script>
+    <style>
+      #text {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="#" id="slidesdown">Slides Down</a> |
+      <a href="#" id="slidesup">Slides Up</a> |
+      <a href="#" id="toggle">Toggle</a>
+    </div>
+    <div>
+      <p id="text">
+        having fulfilled all the requirements and having passed all the
+        prescribed examinations has on the twenty-ninth day of October 2019 been
+        admitted to the degree of Master of Information Technology
+      </p>
+    </div>
+  </body>
+</html>

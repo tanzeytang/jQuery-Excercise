@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorial 3: hide-show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      //$("") jquery selector
+      //show() && hide() method in jquery
+      $("document").ready(function() {
+        $("#show").on("click", show);
+        $("#hide").on("click", hide);
+        function show() {
+          $("#textbox").show();
+        }
+        function hide() {
+          $("#textbox").hide();
+        }
+      });
+    </script>
+    <style>
+      #textbox {
+        /* at the initial, the textbox won't be display */
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" id="show">Click to show</a> |
+    <a href="#" id="hide">Click to hide</a>
+    <div id="textbox">
+      where are you going?
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorial</title>
+    <script src="js/jquery.js"></script>
+    <script>
+      //$("") jquery selector
+      $("document").ready(function() {
+        //in javascript assign a p tag to newText variable
+        //use $("") as assign argument
+        const newText = $("<p>this is a paragraph</p>");
+
+        newText.append("<h1>this is the text append to the p tag</h1>");
+        $("#textbox").css("border", "2px dotted green");
+        $("#textbox").html(newText);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="textbox">
+      1、CSS 盒模型（Box Model） 　　所有 HTML 元素都可以看作是盒子，在 CSS
+      中，“Box Model”这一术语主要是在布局时使用。 　　CSS 盒模型（Box
+      Model）规定了处理元素内容、边框、内边距 和 外边距 的方式。 　　CSS
+      盒模型本质上是一个盒子，封装周围的 HTML
+      元素，它包括：外填充也叫外边距（margin），边框（border），
+      内填充也叫内边距（padding）和实际内容（content）。
+      盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。
+    </div>
+  </body>
+</html>

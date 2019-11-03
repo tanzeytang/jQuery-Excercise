@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorial 4: hover && fadeIn && fadeOut</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      //$("") jquery selector
+      //show() && hide() method in jquery
+      $("document").ready(function() {
+        $("#fadein").on("click", function() {
+          $("#fadetext").fadeIn(3000, function() {
+            alert("I'm done.");
+          });
+        });
+        $("#fadeout").on("click", function() {
+          $("#fadetext").fadeOut(3000, function() {
+            alert("I'm fadeout.");
+          });
+        });
+      });
+    </script>
+    <style>
+      
+      #fadetext {
+        display: none;
+      }
+     
+    </style>
+  </head>
+  <body>
+      <div>
+            <a href="#" id="fadein">fadeIn</a> | <a href="#" id="fadeout">fadeOut</b>
+      </div>
+    <div>
+      
+     
+      <p id="fadetext">
+        having fulfilled all the requirements and having passed all the
+        prescribed examinations has on the twenty-ninth day of October 2019 been
+        admitted to the degree of Master of Information Technology
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Tutorial 5: Toggle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      //$("") jquery selector
+      //show() && hide() method in jquery
+      $("document").ready(function() {
+        $("#toggle").click(function() {
+          $("#text").toggle(4000, "swing");
+        });
+      });
+    </script>
+    <style>
+      #text {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="#" id="toggle">Toggle</a>
+    </div>
+    <div>
+      <p id="text">
+        having fulfilled all the requirements and having passed all the
+        prescribed examinations has on the twenty-ninth day of October 2019 been
+        admitted to the degree of Master of Information Technology
+      </p>
+    </div>
+  </body>
+</html>

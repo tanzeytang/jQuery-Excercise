@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>create content</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $("document").ready(function() {
+        $("#create_text").click(function() {
+          //$("#container p:last").text("Replace and create this text");
+          let newText = $("#container p:first");
+          $("#container p:last").html(newText);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="#" id="create">Create</a>
+    <a href="#" id="create_text">Create Text</a>
+    <a href="#" id="create_variable">Create Variable</a>
+    <div id="container">
+      <p>
+        1 this is the first paragraph
+      </p>
+      <p>
+        2 Lorem ipsum door sit amet, consectetur adipiscing elit.....Lorem ipsum
+        door sit amet, consectetur adipiscing elit.....Lorem ipsum door sit amet
+      </p>
+      <p>
+        3 Lorem ipsum door sit amet, consectetur adipiscing elit.....Lorem ipsum
+        door sit amet, consectetur adipiscing elit.....Lorem ipsum door sit amet
+      </p>
+      <p>
+        4 Lorem ipsum door sit amet, consectetur adipiscing elit.....Lorem ipsum
+        door sit amet, consectetur adipiscing elit.....Lorem ipsum door sit amet
+      </p>
+      <p>
+        5 Lorem ipsum door sit amet, consectetur adipiscing elit.....Lorem ipsum
+        door sit amet, consectetur adipiscing elit.....Lorem ipsum door sit amet
+      </p>
+    </div>
+  </body>
+</html>
